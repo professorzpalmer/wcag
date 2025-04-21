@@ -1,27 +1,26 @@
-    <section id="content-on-hover-or-focus" class="sc">
+     <section id="content-on-hover-or-focus" class="sc">
 
-   <h4>Content on Hover or Focus</h4>
+   <h4>Tartalom egérrel való fölé húzáskor (hover over) vagy fókusz esetén</h4>
    					
    <p class="conformance-level">AA</p>
        
-    	<p>Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:</p>
+    	<p>Amikor az egérmutató fölé húzása (hover over) vagy a billentyűzetfókusz aktiválása további tartalom megjelenését, majd eltűnését váltja ki, az alábbi feltételeknek kell teljesülniük:</p>
 
   <dl>
 
-    <dt>Dismissible</dt>
-    <dd>A <a>mechanism</a> is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an <a>input error</a> or does not obscure or replace other content;</dd>
+    <dt>Bezárható</dt>
+    <dd>Elérhető egy <a>mechanizmus</a> a további tartalom bezárására anélkül, hogy el kellene mozdítani az egérmutatót vagy a billentyűzetfókuszt, kivéve, ha a további tartalom egy <a>beviteli hibát</a> közöl, vagy nem takar el és nem helyettesít más tartalmat;</dd>
 
-    <dt>Hoverable</dt>
-   <dd>If pointer hover can trigger the additional content, then the pointer can be moved  over the additional content without the additional content disappearing;</dd>
-
-    <dt>Persistent</dt>
-    <dd>The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</dd>
+    <dt>Fölé húzható</dt>
+   <dd>Ha az egérrel való fölé húzás okozza a további tartalom megjelenését, akkor az egérmutató rámozgatható a megjelenő tartalomra anélkül, hogy az eltűnne;</dd> 
+    <dt>Állandó</dt>
+    <dd>A további tartalom mindaddig látható marad, amíg a fölé húzás vagy fókusz kiváltó hatása meg nem szűnik, a felhasználó be nem zárja azt, vagy az információ érvényét nem veszti.</dd>
 
   </dl>
     	
-    	<p>Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.</p>
+    	<p>Kivétel:A további tartalom vizuális megjelenítését a felhasználói program irányítja, és azt a webes tartalom szerző nem módosítja.</p>
 
-    	<p class="note">Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <a href="https://www.w3.org/TR/html/dom.html#the-title-attribute"><code>title</code> attribute</a>.</p>
-     <p class="note">Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.</p>
-
+    	<p class="note">A felhasználói program által vezérelt további tartalom például a böngésző által megjelenített eszköztippek, amelyeket a HTML <a href="https://www.w3.org/TR/html/dom.html#the-title-attribute"><code>title</code> cím attribútuma</a> segítségével hoznak létre.</p>
+     <p class="note">Az egyedileg létrehozott eszköztippek, almenük és más nem modális felugró ablakok, amelyek egérrel való fölé húzáskor vagy fókusz hatására jelennek meg, szintén ebbe a teljesítési feltételbe tartoznak.</p>
+    
   </section>
