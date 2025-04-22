@@ -1,29 +1,28 @@
-<dt><dfn id="dfn-relative-luminance">relative luminance</dfn></dt>
+<dt><dfn id="dfn-relative-luminance">relatív fénysűrűség</dfn></dt>
 <dd>
    
-   <p>the relative brightness of any point in a colorspace, normalized to 0 for darkest
-      black and 1 for lightest white
+   <p>a színtér bármelyik pontjának relatív fényerőssége (a fényforrás fényessége), a legsötétebb fekete esetében 0-val, míg a legvilágosabb fehér esetén 1-gyel jelölt
    </p>
    
   <div class="note">
-   <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
-      * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+   <p> Az sRGB színtérhez, a szín relatív fénysűrűsége a következő módon definiált:L = 0.2126
+      * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> ahol <strong>R</strong>, <strong>G</strong> és <strong>B</strong> definíciója:
    </p>
    
    <ul>
       
-      <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+      <li>ha RsRGB &lt;= 0.04045 akkor <strong>R</strong> = RsRGB/12.92  különben <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
       </li>
       
-      <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+      <li>ha GsRGB &lt;= 0.04045 akkor <strong>G</strong> = GsRGB/12.92  különben <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
       </li>
       
-      <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+      <li>ha BsRGB &lt;= 0.04045 akkor <strong>B</strong> = BsRGB/12.92  különben <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
       </li>
       
    </ul>
    
-   <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+   <p>és RsRGB, GsRGB, és BsRGB definíciója:</p>
    
    <ul>
       
@@ -35,29 +34,24 @@
       
    </ul>
    
-   <p>The "^" character is the exponentiation operator. (Formula taken from 
+   <p>A "^" karakter a hatványozást jelent.  (A képlet forrása:
       [[SRGB]].)
    </p>
 
   </div>
 
-  <p class="note">Before May 2021 the value of 0.04045 in the definition was different (0.03928). It was taken from an older version of the specification and has been updated. It has no practical effect on the calculations in the context of these guidelines.</p>
+  <p class="note">2021 májusa előtt a definícióban szereplő 0,04045 érték eltérő volt (0,03928). A specifikáció egy korábbi verziójából származott, és frissítésre került. A számításokra ezeknek az irányelveknek a kontextusában nincs gyakorlati hatása.</p>
   
-   <p class="note">Almost all systems used today to view Web content assume sRGB encoding. Unless it
-      is known that another color space will be used to process and display the content,
-      authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+   <p class="note">A webtartalom megtekintéséhez csaknem az összes, napjainkban használt rendszer az sRGB kódolás alkalmazását feltételezi. Hacsak nem ismeretes, hogy másik színtért fognak használni a tartalom fejlesztésére és megjelenítésére, a szerkesztőknek az sRGB színkép alapján kell értékelniük. Egyéb színterek használatához tekintse meg az <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">1.4.3 teljesítési feltétel értelmezése </a> hivatkozást.
    </p>
    
-   <p class="note">If dithering occurs after delivery, then the source color value is used. For colors
-      that are dithered at the source, the average values of the colors that are dithered
-      should be used (average R, average G, and average B).
+   <p class="note">Ha a raszterezés a megjelenítés után történik, akkor a forrás színértéket kell használni. Azoknál a színeknél, amelyek a forrásnál kerülnek raszterezésre, a raszterezett színek átlagértékeit kell használni (átlagos R, átlagos G és átlagos B érték).
    </p>
    
-   <p class="note">Tools are available that automatically do the calculations when testing contrast and
-      flash.
+   <p class="note">Vannak olyan eszközök, amelyek automatikusan elvégzik a számításokat a kontraszt és a villogás tesztelése során.
    </p>
    
-   <p class="note">A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+   <p class="note">Elérhető a <a href="relative-luminance.html">relatív fénysűrűség meghatározásának MathML változata</a>. 
    </p>
    
 </dd>
