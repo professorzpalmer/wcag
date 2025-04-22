@@ -1,28 +1,28 @@
 <section id="pointer-cancellation" class="sc">
    					
-   <h4>Pointer Cancellation</h4>
+   <h4>Mutatóművelet érvénytelenítése</h4>
    					
    <p class="conformance-level">A</p>
    					
-   <p>For <a>functionality</a> that can be operated using a <a>single pointer</a>, at least one of the following is true:</p>
+   <p>Az olyan <a>funkcionalitás</a> esetében, amely <a>egyetlen mutatóval</a> vezérelhető (mint például egér mutatóval), legalább az alábbiak egyike igaz:</p>
    					
    <dl>
    
-   <dt>No Down-Event</dt>
-     <dd>The <a>down-event</a> of the pointer is not used to execute any part of the function;</dd>
+   <dt>Nem történik semmilyen művelet lenyomásra</dt>
+     <dd>A mutató kezelésére használt készülék (mint például egér) <a>lenyomása </a> nem hajt végre a funkcióból semmilyen részt;</dd>
       						
-   <dt>Abort or Undo</dt>
-     <dd>Completion of the function is on the <a>up-event</a>, and a <a>mechanism</a> is available to abort the function before completion or to undo the function after completion;</dd>
+   <dt>Megszakítás vagy visszavonás</dt>
+     <dd>A funkció akkor fejeződik be, amikor a mutatót<a>felengedik</a>, és elérhető egy <a>mechanizmus</a> a funkció befejezés előtti megszakítására vagy a befejezés utáni visszavonására;</dd>
       						
-   <dt>Up Reversal</dt>
-     <dd>The up-event reverses any outcome of the preceding down-event;</dd>
+   <dt>Felengedés visszafordítása</dt>
+     <dd>A felengedés visszavon minden olyan eredményt, amelyet a megelőző lenyomás váltott ki;</dd>
       						
-   <dt>Essential</dt>
-     <dd>Completing the function on the down-event is <a>essential</a>.</dd>
+   <dt>Lényeges</dt>
+     <dd>A funkció lenyomásra történő végrehajtása <a>lényeges</a>.</dd>
       						
    </dl>
-   <p class="note">Functions that emulate a keyboard or numeric keypad key press are considered essential.</p>
+   <p class="note">Azok a funkciók, amelyek billentyűzet vagy numerikus billentyűzet gombnyomását utánozzák, lényegesnek minősülnek</p>
    					
-  <p class="note">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).</p>
+  <p class="note">Ez a követelmény azokra a webtartalmakra vonatkozik, amelyek értelmezik a mutatóval végzett műveleteket (azaz nem vonatkozik azokra a műveletekre, amelyek a felhasználói program vagy a kisegítő technológia működtetéséhez szükségesek).</p>
 	
 </section>
