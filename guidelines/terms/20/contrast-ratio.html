@@ -1,47 +1,33 @@
-<dt><dfn id="dfn-contrast-ratio">contrast ratio</dfn></dt>
+<dt><dfn id="dfn-contrast-ratio">kontrasztarány</dfn></dt>
 <dd>
    
-   <p>(L1 + 0.05) / (L2 + 0.05), where</p>
+   <p>(L1 + 0.05) / (L2 + 0.05), ahol</p>
    
    <ul>
       
-      <li>L1 is the <a>relative luminance</a> of the lighter of the colors, and
+      <li>L1 a színek világosságának <a>relatív</a> fényerőssége, és 
       </li>
       
-      <li>L2 is the <a>relative luminance</a> of the darker of the colors.
+      <li>L2 a színek sötétségének <a>relatív fényerőssége</a>.
       </li>
       
    </ul>
    
-   <p class="note">Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).</p>
+   <p class="note">A kontrasztarány értéke 1-től 21-ig terjedhet (általánosan 1:1-től 21:1-ig).</p>
    
-   <p class="note">Because authors do not have control over user settings as to how text is rendered
-      (for example font smoothing or anti-aliasing), the contrast ratio for text can be
-      evaluated with anti-aliasing turned off.
+   <p class="note">Mivel a szerkesztőknek nincs ellenőrzésük a felhasználói beállítások felett a szöveg megváltoztatására vonatkozóan (például: betűsimítás vagy finomítás), a szöveghez kapcsolódó kontrasztarány a finomítás kikapcsolásával értékelhető.
    </p>
    
-   <p class="note">For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect
-      to the specified background over which the text is rendered in normal usage. If no
-      background color is specified, then white is assumed.
+   <p class="note">Az 1.4.3 és az 1.4.6 Teljesítési Követelmények céljainak megfelelően a kontraszt mérése az előírt háttér figyelembevételével történik, amin keresztül a szöveg megváltozik a normál használat során. Ha nincs háttérszín meghatározva, akkor a fehér az elfogadott. 
    </p>
    
-   <p class="note">Background color is the specified color of content over which the text is to be rendered
-      in normal usage. It is a failure if no background color is specified when the text
-      color is specified, because the user's default background color is unknown and cannot
-      be evaluated for sufficient contrast. For the same reason, it is a failure if no text
-      color is specified when a background color is specified.
+   <p class="note"> A háttérszín az előírt színe a tartalomnak. Hibát jelent, ha a háttér színe nem, míg a szöveg színe meghatározott, mert a felhasználók alap háttérszíne ismeretlen, és nem lehet értékelni a megfelelő kontraszt céljából. Hasonló okból hibát jelent, ha a szöveg színe nem, míg a háttér színe meghatározott. 
    </p>
    
-   <p class="note">When there is a border around the letter, the border can add contrast and would be
-      used in calculating the contrast between the letter and its background. A narrow border
-      around the letter would be used as the letter. A wide border around the letter that
-      fills in the inner details of the letters acts as a halo and would be considered background.
+   <p class="note"> Ahol a betű körül keret található, a keret kontrasztot is biztosíthat, valamint felhasználható a betű és a háttér közötti kontraszt kiszámításához. A betű körüli keskeny keret a betű részeként használható. A betű körüli vastag keret, mely annak belső részleteit is kitölti, fényudvarként működik és háttérnek tekinthető.
    </p>
    
-   <p class="note">WCAG conformance should be evaluated for color pairs specified in the content that
-      an author would expect to appear adjacent in typical presentation. Authors need not
-      consider unusual presentations, such as color changes made by the user agent, except
-      where caused by authors' code.
+   <p class="note">A WCAG megfelelésnek értékelhetőnek kell lennie a tartalomban előírt színpárok szempontjából, amelyet a szerkesztő egymás melletti megjelenítésben képzel el egy tipikus megjelenítés során. A szerkesztőknek nem kell figyelembe venniük az olyan szokatlan megjelenítéseket, mint a felhasználói program által készített színváltozások, kivéve olyan esetben, melyek a szerkesztői kódok következményei.
    </p>
    
 </dd>
