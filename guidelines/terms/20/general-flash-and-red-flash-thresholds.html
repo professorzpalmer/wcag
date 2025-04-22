@@ -1,54 +1,43 @@
-<dt><dfn id="dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</dfn></dt>
+<dt><dfn id="dfn-general-flash-and-red-flash-thresholds">általános villanás és vörös villanás küszöbök</dfn></dt>
 <dd>
    
-   <p>a <a>flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
+   <p>egy <a>villanás</a> vagy egy gyorsan változó képsorozat alatta marad a küszöbnek (azaz a tartalom <strong>megfelel</strong>) ha az alábbiak közül bármelyik teljesül:
    </p>
    
    <ol>
       
-      <li>there are no more than three <strong>general flashes</strong> and / or no more than three <strong>red flashes</strong> within any one-second period; or
+      <li>egy másodperces időtartamon belül nincs több, mint három <strong>általános villanás,</strong> és/vagy nincs több, mint három  <strong>vörös villanás</strong>; vagy
       </li>
       
-      <li>the combined area of flashes occurring concurrently occupies no more than a total
-         of .006 steradians within any 10 degree visual field on the screen (25% of any 10
-         degree visual field on the screen) at typical viewing distance
+      <li>optimális látási távolságból a kombinált villanások kiterjedése egyidejűleg nem foglal el .0006 szteradiánnál nagyobb területet bármely 10 fokos látótérből a képernyőn (bármely 10 fokos látótér 25%-át a képernyőn)
       </li>
       
    </ol>
    
-   <p>where:</p>
+   <p>ahol:</p>
    
    <ul>
       
-      <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a>relative luminance</a> of 10% or more of the maximum relative luminance (1.0) where the relative luminance of
-         the darker image is below 0.80; and where "a pair of opposing changes" is an increase
-         followed by a decrease, or a decrease followed by an increase, and
+      <li>Az <strong> általános villanás</strong>  ellentétpár-változásokat jelent a <a>relatív fényerősségen</a> (a fényforrás fényességén) belül, vagyis 10%-át vagy ezt meghaladó mértékét a maximális relatív fényerősségnek, ahol a sötétebb kép relatív fényerőssége 0,80 alatt marad, és ahol „az ellentétpár-változások” növekedést követő csökkenést, vagy csökkenést követő növekedést takarnak; és
       </li>
       
-      <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red
+      <li>A <strong>vörös villanás</strong> ellentétpár-átmeneteket jelent, telített vörös színt tartalmaz.
       </li>
       
    </ul>
    
-   <p><em>Exception:</em> Flashing that is a fine, balanced, pattern such as white noise or an alternating
-      checkerboard pattern with "squares" smaller than 0.1 degree (of visual field at typical
-      viewing distance) on a side does not violate the thresholds.
+   <p><em>Kivétel:</em> Az a villanás, amely tiszta, kiegyenlített minta, amely olyan, mint a fehér zaj; vagy egy váltakozó sakktábla-minta 0,1 foknál kisebb “négyzetekkel”egy oldalon (a látótérhez képest, optimális látási távolságnál) nem sértik meg a küszöböket.
    </p>
    
-   <p class="note">For general software or Web content, using a 341 x 256 pixel rectangle anywhere on the displayed screen area when the content is viewed at 1024 x 768 pixels will provide a good estimate of a 10 degree visual field for standard screen sizes and viewing distances (e.g., 15-17 inch screen at 22-26 inches). This resolution of 75 - 85 ppi is known to be lower, and thus more conservative than the nominal CSS pixel resolution of 96 ppi in CSS specifications. Higher resolutions displays showing the same rendering of the content yield smaller and safer images so it is lower resolutions that are used to define the thresholds.
+   <p class="note">Általános szoftverek vagy webtartalom részére, amikor a tartalmat egy 1024 x 768 pixeles képernyőn nézzük, a képernyő terület bármelyik részén megjelenített 341 x 256 pixeles téglalap használata jól biztosítja a 10 fokos látóteret a szabványos képernyő méretekhez és képernyőnézési távolságokhoz. (pl. egy 15-17 collos képernyő 22-26 collos távolságból). (Nagyobb felbontású képernyők a tartalom ugyanolyan megjelenítését nyújtják a kisebb és biztonságosabb képeknél, így az alacsony felbontás használatos a küszöbök meghatározásához.)
    </p>
    
-   <p class="note">A transition is the change in relative luminance (or relative luminance/color for
-      red flashing) between adjacent peaks and valleys in a plot of relative luminance (or
-      relative luminance/color for red flashing) measurement against time. A flash consists
-      of two opposing transitions.
+   <p class="note">Az átmenet változást jelent a relatív fényerősségben (vagy relatív fényerősség/szín a vörös villanásnál) két szomszédos felső és alsó érték között az idővel szembeállított relatív fényerősség (vagy relatív fényerősség/szín a vörös villanáshoz) mérési területén. A villanás két ellentétes átmenetet tartalmaz.
    </p>
 
-   <p class="note">The working definition (as of 2022) in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> is a pair of opposing transitions where, one transition is either to or from a state with a value R/(R + G + B) that is greater than or equal to 0.8, and the difference between states is more than 0.2 (unitless) in the CIE 1976 UCS chromaticity diagram. [[ISO_9241-391]] </p>
+   <p class="note">A (2022-től) érvényes szakmai meghatározása az <strong>„ellentétpár átmenetek a telített vörös bevonásával”</strong> fogalomnak az, ahol az egyik vagy mindkét állapotot magába foglalja minden átmenet, R/(R+G+ B) >= 0,8, és az értékváltozás mindkét átmenetnél nem több mint 0,2 (mértékegység nélkül) a CIE 1976-os UCS színtér diagramban. [[ISO_9241-391]] </p>
    
-   <p class="note">Tools are available that will carry out analysis from video screen capture. However,
-      no tool is necessary to evaluate for this condition if flashing is less than or equal
-      to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
+   <p class="note"> Olyan eszközök érhetők el, melyek elemzéseket végeznek az elmentett videó képernyőkről. Ennek ellenére, nem szükséges eszköz ennek a feltételnek a kiértékeléséhez, ha a villanás másodpercenként kevesebb, vagy egyenlő, mint 3 villanás. A tartalom automatikusan átadódik (tekintse meg a fenti #1-et és #2-őt).
    </p>
    
 </dd>
